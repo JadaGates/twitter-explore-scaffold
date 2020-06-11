@@ -8,15 +8,13 @@
   border-color: #8899a6;
 
   nav {
-    > ul {
-      display: flex;
-
-      > li {
-        margin-right: 10px;
-
-        &:last-child {
-          margin-right: 0;
-        }
+    @extend.menu;
+    li {
+      &:first-child {
+        @include btn-variant($primary-color, $primary-color-transparency);
+      }
+      &:last-child {
+        @include btn-variant(white, $primary-color);
       }
     }
   }
