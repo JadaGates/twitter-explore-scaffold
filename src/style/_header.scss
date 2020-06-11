@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #8899a6;
+
+  nav {
+    > ul {
+      display: flex;
+
+      > li {
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
