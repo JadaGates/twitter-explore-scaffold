@@ -11,3 +11,22 @@
     }
   }
 }
+
+.inputfield {
+  > ul {
+    > li {
+      font-size: large;
+    }
+    > input {
+      background-color: $body-bg;
+      border-bottom: 1px solid #dbdbdb;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      width: 100%;
+      font-size: large;
+      padding-left: -90000px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,2 +1,46 @@
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px 40px 40px 40px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  ul {
+    h2 {
+      color: white;
+      padding-top: 35px;
+      padding-bottom: 35px;
+      margin: 0px 18px 0px 18px;
+    }
+    @extend .inputfield;
+    li {
+      &.forget_pwd {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+      &.or {
+        text-align: center;
+        padding: 10px;
+      }
+
+      &.btn_login {
+        @include btn-variant($primary-color, $primary-color-transparency);
+      }
+      &.btn_logon {
+        @include btn-variant(white, $primary-color);
+      }
+    }
+  }
 }
